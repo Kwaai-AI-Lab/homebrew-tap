@@ -1,35 +1,39 @@
 class Kwaainet < Formula
   desc "kwaainet – KwaaiNet node CLI"
   homepage "https://kwaai.ai"
-  version "0.3.1"
+  version "0.3.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.1/kwaainet-aarch64-apple-darwin.tar.xz"
-      sha256 "612a2743c039bb52b1232038bf4606e29ae283f6d16163f7bd034f2a5dd33df3"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.2/kwaainet-aarch64-apple-darwin.tar.xz"
+      sha256 "17dd6ca9233937714a38d1d509ef0466504c9922936dc6dcd660b573b9d662fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.1/kwaainet-x86_64-apple-darwin.tar.xz"
-      sha256 "d7505fc28d98c19d5f7d0532c59bea4e87d37da64293e2f49451ddfc10fc90a4"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.2/kwaainet-x86_64-apple-darwin.tar.xz"
+      sha256 "15f2771a842e4915d929f4e8b11ecea4762a08df972c48d841ff577a382d04d2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.1/kwaainet-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "32f9f1675e491d3f4bd2739da534f48166591c37eca327d4679b10e0469efbd2"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.2/kwaainet-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c597518d518d6044e49c032221976c7a418f2d65de4ee44ce9873cf7319d0d58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.1/kwaainet-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "53c515896a97a26cfe95c5be506a2b1bac4b36d26e8ab6d958e038a80a3e6134"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.3.2/kwaainet-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "999b83e2119742d3140463b194118abcf41f248db147d1518ef2663a8c984231"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":               {},
+    "aarch64-unknown-linux-gnu":          {},
+    "aarch64-unknown-linux-musl-dynamic": {},
+    "aarch64-unknown-linux-musl-static":  {},
+    "x86_64-apple-darwin":                {},
+    "x86_64-pc-windows-gnu":              {},
+    "x86_64-unknown-linux-gnu":           {},
+    "x86_64-unknown-linux-musl-dynamic":  {},
+    "x86_64-unknown-linux-musl-static":   {},
   }.freeze
 
   def target_triple
