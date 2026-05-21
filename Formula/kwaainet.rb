@@ -1,25 +1,25 @@
 class Kwaainet < Formula
   desc "kwaainet – KwaaiNet node CLI"
   homepage "https://kwaai.ai"
-  version "0.4.74"
+  version "0.4.75"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.74/kwaainet-aarch64-apple-darwin.tar.xz"
-      sha256 "147dc1c19e1166c929efa5f0675aa42ff1997710d6eae24d62d0315a28254e3b"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.75/kwaainet-aarch64-apple-darwin.tar.xz"
+      sha256 "1626b1c6b12cfa349d3ea17e2f018fa0567431fa82dcd99676c84d0b3a06579e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.74/kwaainet-x86_64-apple-darwin.tar.xz"
-      sha256 "4ed2e2b6f32680123bfa9bed6af4e97a11cff21f45f26f00e153dd4d5005cc30"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.75/kwaainet-x86_64-apple-darwin.tar.xz"
+      sha256 "851868dfd174c3bf32069a75a4a139bbb113c81f75a05c10025400e5be5d81d2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.74/kwaainet-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ba6603bc357891ce4ce8fce346511b0e326b3c5527d26d9e71768de7d231be2d"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.75/kwaainet-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c778c70e1ad875e8ca95edb7f02718008294a1875ac0b333fd16e53f2d1d7695"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.74/kwaainet-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "20f34c8496ffac31798a8c4729297ef3760e80a24b6e15a31197ff5c837d23d0"
+      url "https://github.com/Kwaai-AI-Lab/KwaaiNet/releases/download/v0.4.75/kwaainet-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "005487e73927f7e8f6b96a108cc88c545e28ed36181a53125fd1b8eef9a4f7b1"
     end
   end
   license "MIT"
